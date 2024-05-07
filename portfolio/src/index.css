@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #c5b6ed;
+    --secondary-color: #fab5d4;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--primary-color)
+}
+
+body {
+  background-color: var(--primary-color);
+}
