@@ -24,3 +24,8 @@
 .scrim h4 {
     color: whitesmoke;
 }
+
+.name {
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 1px 1px 2px black;
+}

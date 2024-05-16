@@ -17,6 +17,7 @@ const App = () => (
             {/* Define your routes */}
             <Route path="/" Component={() => <Home />} />
             <Route path="/about" Component={() => <About />} />
+            <Route path="/experience" Component={() => <About />} />
           </Routes>
         </Suspense>
       </div>
