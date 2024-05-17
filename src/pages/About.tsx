@@ -27,13 +27,13 @@ const About: React.FC<AboutProps> = () => {
             <Container fluid style={{ marginTop: '70px', minHeight: '100vh'}}>
                 <Row className="petals" style={{display: 'flex', justifyContent: 'center', alignContent: 'flex-start', height: '100%'}}>
                     <Col xs={12} style={{ marginBottom: '10px'}}>
-                        <GenericCard title="About Me" text={ABOUT_ME_TEXT} width='66%' />
+                        <GenericCard title="About Me" text={ABOUT_ME_TEXT} />
                     </Col>
                     <Col xs={12} style={{ marginBottom: '10px'}}>
-                        <GenericCard title="Experience" text={EXPERIENCE_TEXT} width='66%' />
+                        <GenericCard title="Experience" text={EXPERIENCE_TEXT} />
                     </Col>
                     <Col xs={12}>
-                        <GenericCard title="Skills" text={SKILL_TEXT} width='66%'>
+                        <GenericCard title="Skills" text={SKILL_TEXT}>
                             <Accordion>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Frontend</Accordion.Header>
@@ -41,7 +41,7 @@ const About: React.FC<AboutProps> = () => {
                                         I have worked extensively with the following frontend technologies:
                                         <br />
                                         <ListGroup variant='flush'>
-                                            <ListGroupItem>
+                                            <ListGroupItem key="react">
                                                 <strong>React.js - 3 years</strong>
                                                 <br />
                                                 ⦿ Developed professional web application interfaces for stakeholders and internal userbase of 40+ users.
@@ -50,13 +50,13 @@ const About: React.FC<AboutProps> = () => {
                                                 <br />
                                                 ⦿ Co-managed standards committe for defining best practices when working with React.js for the development team at Adknown.
                                             </ListGroupItem>
-                                            <ListGroupItem>
+                                            <ListGroupItem key="bootstrap">
                                                 <strong>Bootstrap - 3 years</strong>
                                             </ListGroupItem>
-                                            <ListGroupItem>
+                                            <ListGroupItem key="jquery">
                                                 <strong>jQuery - 2 years</strong>
                                             </ListGroupItem>
-                                            <ListGroupItem>
+                                            <ListGroupItem key="mui">
                                                 <strong>Material UI - 2 years</strong>
                                             </ListGroupItem>
                                         </ListGroup>
