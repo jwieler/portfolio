@@ -4,6 +4,8 @@ import React from "react"
 interface GenericCardProps {
     text: string,
     title: string | null | undefined,
+    width: string | undefined,
+    children?: React.ReactNode | null | undefined,
 };
 
 
@@ -64,10 +66,10 @@ const createParagraphs = (text: string) => {
     return paragraphs;
 }
 
-const GenericCard: React.FC<GenericCardProps> = ({title, text}) => {
+const GenericCard: React.FC<GenericCardProps> = ({title, text, width, children}) => {
     const paragraphs = createParagraphs(text);
     return (
-        <Card>
+        <Card style={{width: width, margin: 'auto'}}>
             <Card.Body>
                 {title?.length && (
                     <Card.Title>
@@ -75,6 +77,7 @@ const GenericCard: React.FC<GenericCardProps> = ({title, text}) => {
                     </Card.Title>
                 )}
                 {paragraphs}
+                {children}
             </Card.Body>
         </Card>
     )

@@ -24,7 +24,7 @@ const Home: React.FC<HomeProps> = () => {
                         </div>
                     </div>
                 </Row>
-                <Row style={{ display: 'flex', justifyContent: 'center'}}>
+                <Row style={{ display: 'flex', justifyContent: 'center', margin: '20px 0px'}}>
                     <Col style={{ maxWidth: '600px'}}>
                         <Carousel />
                     </Col>
