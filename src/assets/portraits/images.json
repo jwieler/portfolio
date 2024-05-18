@@ -1,0 +1,17 @@
+{
+    "images": [
+        {
+            "src": "/src/assets/portraits/squritle.png",
+            "caption": "Squirtle.",
+            "alt": "Squirtle.",
+            "subcaption": "Gotta catch 'em all"
+        },
+        {
+            "src": "/src/assets/portraits/sunnySquirtle.png",
+            "caption": "Selfie!.",
+            "alt": "Selfie",
+            "subcaption": "Lookin good here!"
+        }
+        
+    ]
+}

@@ -20,16 +20,15 @@ const Footer: React.FC<FooterProps> = ({sticky}) => {
                     </Navbar.Brand>
                 </Row>
                 <Row xs={3}>
-                    <Navbar.Brand href="https://open.spotify.com/user/01zd666oc7ajovj95nf1b7aqs?si=7282bec4636b4ad9" target="_blank">
-                        <i className="fa-brands fa-spotify"></i>
-                    </Navbar.Brand>
-                </Row>
-                <Row xs={3}>
                     <Navbar.Brand href="mailto:jacobwieler21@gmail.com" target="_blank">
                         <i className="fa-solid fa-envelope"></i>
                     </Navbar.Brand>
                 </Row>
-                
+                <Row xs={3}>
+                    <Navbar.Brand href="https://open.spotify.com/user/01zd666oc7ajovj95nf1b7aqs?si=7282bec4636b4ad9" target="_blank">
+                        <i className="fa-brands fa-spotify"></i>
+                    </Navbar.Brand>
+                </Row> 
             </Container>
         </Navbar>
     )

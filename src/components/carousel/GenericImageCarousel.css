@@ -1,0 +1,29 @@
+
+.img-scrim {
+    filter: brightness(30%);
+    transition: filter 0.2s;
+}
+
+.img-container {
+    transition: filter 0.2s;
+}
+
+.img-container img {
+    height: 600px;
+}
+
+.show-caption {
+    display: unset;
+    transition: display 0.2s;
+}
+
+.hide-caption {
+    transition: display 0.2s;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-container img {
+        height: 300px;
+    }
+}

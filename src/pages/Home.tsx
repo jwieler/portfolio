@@ -3,14 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../components/Header/Header';
-import Carousel from '../components/carousel/Carousel';
+import GenericImageCarousel from '../components/carousel/Carousel';
 import Footer from "../components/Footer/Footer";
 import './Home.css';
+import IMAGES from '../assets/portraits/images.json';
 
 interface HomeProps {
 
 };
-
+ 
 const Home: React.FC<HomeProps> = () => {
     return (
         <>
@@ -25,8 +26,8 @@ const Home: React.FC<HomeProps> = () => {
                     </div>
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', margin: '20px 0px'}}>
-                    <Col style={{ maxWidth: '600px'}}>
-                        <Carousel />
+                    <Col style={{ maxWidth: '1000px'}}>
+                        <GenericImageCarousel images={IMAGES} />
                     </Col>
                 </Row>
             </Container>
