@@ -4,6 +4,7 @@ import { Accordion, Col, Container, ListGroup, ListGroupItem, Row } from "react-
 import './About.css';
 import GenericCard from "../components/TextCard/GenericCard";
 import Footer from "../components/Footer/Footer";
+import Resume from "../assets/Resume.pdf";
 
 interface AboutProps {
 
@@ -16,7 +17,7 @@ Aside from work, I enjoy playing ball hockey, beach volleyball, going to the gym
 `;
 
 const EXPERIENCE_TEXT = `I have over 2 years of Professional Software Engineering experience. I started out my career at <a href="https://adknown.com">Adknown</a> where I worked as part of an agile team and learned a lot about being a well rounded Software Engineer. I quickly developed my skills and eventually found myself as Technical Lead at Prompt Core, where I am currently working.
-I have learned so much along the way, but I am always looking forward to learning new skills and meeting new people. See more about my experience <a href="/experience">here</a>, or take a look at my <a href="/src/assets/Resume.pdf">resume</a>.`;
+I have learned so much along the way, but I am always looking forward to learning new skills and meeting new people. See more about my experience <a href="/experience">here</a>, or take a look at my <a href="${Resume}">resume</a>.`;
 
 const SKILL_TEXT = `As a fullstack Software Engineer, I have developed many skills over the years. Take a look at a few of them down below!`
 

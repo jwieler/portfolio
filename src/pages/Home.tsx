@@ -6,7 +6,7 @@ import Header from '../components/Header/Header';
 import GenericImageCarousel from '../components/carousel/Carousel';
 import Footer from "../components/Footer/Footer";
 import './Home.css';
-import IMAGES from '../assets/portraits/images.json';
+import images from '../assets/portraits/images';
 
 interface HomeProps {
 
@@ -20,14 +20,16 @@ const Home: React.FC<HomeProps> = () => {
                 <Row style={{height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <div className="backgroundImage" style={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                         <div className="scrim">
-                            <h1 className="name">Jacob Wieler</h1>
-                            <h4 className="name">Software Engineer</h4>
+                            <div className="name-container">
+                                <h1 className="name">Jacob Wieler</h1>
+                                <h2 className="name title">Software Engineer</h2>
+                            </div>
                         </div>
                     </div>
                 </Row>
                 <Row style={{ display: 'flex', justifyContent: 'center', margin: '20px 0px'}}>
                     <Col style={{ maxWidth: '1000px'}}>
-                        <GenericImageCarousel images={IMAGES} />
+                        <GenericImageCarousel images={images} />
                     </Col>
                 </Row>
             </Container>

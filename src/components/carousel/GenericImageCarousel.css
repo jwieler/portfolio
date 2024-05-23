@@ -6,6 +6,7 @@
 
 .img-container {
     transition: filter 0.2s;
+    cursor: pointer;
 }
 
 .img-container img {
@@ -22,7 +23,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
     .img-container img {
         height: 300px;
     }

@@ -19,8 +19,12 @@ const GenericImageCarousel: React.FC<GenericImageCarouselProps> = ({images}) => 
       {images.images.map((image) => (
         <Carousel.Item 
           style={{height: '100%', textAlign: 'center'}} 
-          onMouseEnter={() => {
-            setShowCaption(true);
+          onMouseEnter={(event: any) => {
+            const screenSize = event.view.screen.availWidth;
+            if (screenSize > 600)
+            {
+              setShowCaption(true);
+            }
           }}
           onClick={() => {
             setShowCaption((curr) => !curr);

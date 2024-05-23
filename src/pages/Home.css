@@ -18,15 +18,39 @@
     align-items: center;
 }
 
-.scrim h1 {
-    color: whitesmoke;
-}
-.scrim h4 {
-    color: whitesmoke;
+.name-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .name {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 4px black;
-    font-size: 5rem;
+    color: whitesmoke;
+}
+
+.title {
+    overflow-y: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .07em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    /* font-size: 5rem; */
+    animation: 
+        typing 1.5s steps(17, end),
+        blink-caret .75s step-end infinite;
+    width: fit-content;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: grey; }
 }

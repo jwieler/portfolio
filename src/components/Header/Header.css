@@ -22,6 +22,11 @@
 .nav-link {
   text-decoration: none;
   margin-left: 10px; /* Add some spacing between links */
+  color: black;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
 }
 
 
