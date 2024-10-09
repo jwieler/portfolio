@@ -12,11 +12,11 @@ interface AboutProps {
 
 const ABOUT_ME_TEXT = `My name is Jacob Wieler, I am a Software Engineer by day, and an athlete, gamer, and music nerd by night!
 I love learning new things and am passionate about technology. My current fascination is AI, as I am working as a Technical Lead at a startup called <a href="https://promptcore.ai">Prompt Core</a>. We focus on building tools to help anyone harness the power of generative AI.
-As the Technical Lead, I design, review, and develop our systems. We make use of many emerging technologies including: Chat-GPT, DALL-E, and Azure Promptflow. On top of that, we containerize our proprietary AI workflows and deploy them to a kubernetes cluster to ensure scalability and availability.
+As the Technical Lead, I design, review, and develop our systems. We make use of many emerging technologies including: Chat-GPT, DALL-E, and Azure Promptflow. On top of that, we containerize our proprietary AI workflows and deploy them to kubernetes clusters to ensure scalability and availability.
 Aside from work, I enjoy playing ball hockey, beach volleyball, going to the gym, going on hikes, and listening to music! <a href="https://open.spotify.com/user/01zd666oc7ajovj95nf1b7aqs?si=7282bec4636b4ad9">Check me out on Spotify</a> and see what I'm listening to, maybe you'll hear something you like!
 `;
 
-const EXPERIENCE_TEXT = `I have over 2 years of Professional Software Engineering experience. I started out my career at <a href="https://adknown.com">Adknown</a> where I worked as part of an agile team and learned a lot about being a well rounded Software Engineer. I quickly developed my skills and eventually found myself as Technical Lead at Prompt Core, where I am currently working.
+const EXPERIENCE_TEXT = `I have over 2 years of Professional Software Engineering experience. I started out my career at <a href="https://adknown.com">Adknown</a> where I worked as part of an agile team and learned a lot about being a well rounded Software Engineer. I quickly developed my skills and eventually found myself as Technical Lead at <a href="https://promptcore.ai">Prompt Core</a>, where I am currently working.
 I have learned so much along the way, but I am always looking forward to learning new skills and meeting new people. See more about my experience <a href="/experience">here</a>, or take a look at my <a href="${Resume}">resume</a>.`;
 
 const SKILL_TEXT = `As a fullstack Software Engineer, I have developed many skills over the years. Take a look at a few of them down below!`
@@ -66,7 +66,38 @@ const About: React.FC<AboutProps> = () => {
                                 <Accordion.Item eventKey="1">
                                     <Accordion.Header>Backend</Accordion.Header>
                                     <Accordion.Body>
-                                        
+                                        I have experience with the following backend technologies:
+                                        <br />
+                                        <ListGroup variant='flush'>
+                                            <ListGroupItem key="node">
+                                                <strong>Node.js - 2 years</strong>
+                                                <br />
+                                                ⦿ Devloped RESTful APIs using Node.js backends in both AWS and Azure.
+                                                <br />
+                                                ⦿ Wrote a Websocket server using the AWS API Gateway WebSocket API handling real-time notifications across an entire organization.
+                                            </ListGroupItem>
+                                            <ListGroupItem key="php">
+                                                <strong>PHP - 2 years</strong>
+                                                <br />
+                                                ⦿ Devloped API endpoints for uploading and managing Ad campaigns via Facebook and Google.
+                                                <br />
+                                                ⦿ Developed backend server for internal tools used by an entire organization for CRUD applcaitons dealing with internal data.
+                                            </ListGroupItem>
+                                            <ListGroupItem key="sql">
+                                                <strong>SQL - 3 years</strong>
+                                                <br />
+                                                ⦿ Developed queries to create reports tracking user activity throughout traffic pipeline by IP.
+                                                <br />
+                                                ⦿ Wrote queries to create, read, update, and delete records from internal tools.
+                                            </ListGroupItem>
+                                            <ListGroupItem key="python">
+                                                <strong>Python - 1 year</strong>
+                                                <br />
+                                                ⦿ Developed web scraping jobs using selenium to automatically fetch web content.
+                                                <br />
+                                                ⦿ Developed AI workflows using Promptflow to chain LLM input/output to Python functions to curate and analyze results.
+                                            </ListGroupItem>
+                                        </ListGroup>
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
